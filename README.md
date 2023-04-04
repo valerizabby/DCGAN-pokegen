@@ -21,3 +21,7 @@
 - `LeakyReLU` на всех слоях дискриминатора 
 
 В этой работе используются следующие архитектуры: 
+
+Diskriminator            |  Generator
+:-------------------------------------:|:-------------------------------------:
+![disk](https://github.com/valerizabby/DCGAN-pokegen/blob/main/pictures/discriminator-model100.pth.png)  |  ![gen](https://github.com/valerizabby/DCGAN-pokegen/blob/main/pictures/generator-model100.pth.png)
