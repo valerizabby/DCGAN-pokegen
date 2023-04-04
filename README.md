@@ -16,7 +16,7 @@
 
 Класс архитектур DCGAN основан на наборе принципов, таких как: 
 - Замена pooling слоев на пошаговые свертки
-- Использование пактной нормализации в генераторе и дискриминаторе
+- Использование пакетной нормализации в генераторе и дискриминаторе
 - `ReLU` на всех слоях генератора, кроме выходного (там  `tanh`)
 - `LeakyReLU` на всех слоях дискриминатора 
 
@@ -25,3 +25,9 @@
 Diskriminator            |  Generator
 :-------------------------------------:|:-------------------------------------:
 ![disk](https://github.com/valerizabby/DCGAN-pokegen/blob/main/pictures/discriminator-model100.pth.png)  |  ![gen](https://github.com/valerizabby/DCGAN-pokegen/blob/main/pictures/generator-model100.pth.png)
+
+## Training
+
+В обучении используется `BCE Loss` и `Adam Optimizer` с параметрами `betas=(0.5, 0.9)` (причем GAN-ы из-за специфики обучения крайне чувствительны к гиперпараметрам). 
+
+
