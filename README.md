@@ -40,10 +40,10 @@ Diskriminator            |  Generator
 Процесс обучения (лоссы и скоры) сохраняются в Tensor Board, результаты можно посмотреть по ссылкам для [50 эпох](https://tensorboard.dev/experiment/ltajKpFnRnG9xoclg8v5zw/#scalars) и [100 эпох](https://tensorboard.dev/experiment/SBqmdE1BT2uRkD8T3mrFKw/#scalars).
 
 ## Pretrained models
-Обученные модели можно скачать по ![ссылке](https://drive.google.com/drive/u/0/folders/1N3PIDPy60qruqCeyqI-4teDcdi533rxf). В конце ноутбука есть функция `download_file_from_google_drive(id, destination)`, которая импортирует предобученные модели.
+Обученные модели можно скачать по [ссылке](https://drive.google.com/drive/u/0/folders/1N3PIDPy60qruqCeyqI-4teDcdi533rxf). В конце ноутбука есть функция `download_file_from_google_drive(id, destination)`, которая импортирует предобученные модели.
 
 ## Summary 
-DCGAN довольно старый класс архитектур (2016 г), в нем используются устаревшие идеи, поэтому получить крутой перфоманс не получится. Среди таких идей, например, использование пошаговых сверток и pooling слоев. Так как в этой задаче используются фотографии в низком разрешении ($64 \times 64$ пикселей) эти слои приводят к потере "мелких" признаков и ухудшению признаковых представлений картинок (![источник](https://arxiv.org/abs/2208.03641#)).
+DCGAN довольно старый класс архитектур (2016 г), в нем используются устаревшие идеи, поэтому получить крутой перфоманс не получится. Среди таких идей, например, использование пошаговых сверток и pooling слоев. Так как в этой задаче используются фотографии в низком разрешении ($64 \times 64$ пикселей) эти слои приводят к потере "мелких" признаков и ухудшению признаковых представлений картинок ([источник](https://arxiv.org/abs/2208.03641#)).
 
 ## References
 - DCGAN [статья](https://arxiv.org/pdf/1511.06434.pdf), [туториал](https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/5f81194dd43910d586578638f83205a3/dcgan_faces_tutorial.ipynb#scrollTo=PEDpuNs6NZ4x)
